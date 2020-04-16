@@ -21,11 +21,13 @@ public class TistaSectionC {
     @Test
     public void takeoutFirstAndLastTest() {
         System.out.println(TistaSectionB.takeoutFirstAndLast(word));
+        assertEquals("oddingJav",TistaSectionB.takeoutFirstAndLast(word));
     }
 
     @Test
     public void getNotNullsTest() {
         System.out.println(TistaSectionB.getNotNulls(nums));
+         assertEquals([],TistaSectionB.getNotNulls(nums));
     }
 
     @Test
@@ -57,19 +59,13 @@ public class TistaSectionC {
     @Test
     public void getTheShortest() {
         System.out.println(getTheShortest(sentence));
-        System.out.println(getTheShortest("Tinkle, Tinkle little car\n" +
-                "How I wonder what you are.\n" +
-                "\n" +
-                "Leaking oil every day\n" +
-                "Having it your own way.\n" +
-                "\n" +
-                "\n" +
-                "Source: https://www.familyfriendpoems.com/poem/tinkle-tinkle-little-car"));
+        assertEquals("a",getTheShortest(sentence));
 
     }
 
     @Test
     public void getShortest() {
         System.out.println(getTheShortest("Tinkle, Tinkle little car How I wonder what you are Leaking oil every day Having it your own way."));
+         assertEquals("I",getTheShortest("Tinkle, Tinkle little car How I wonder what you are Leaking oil every day Having it your own way."));
     }
 }
